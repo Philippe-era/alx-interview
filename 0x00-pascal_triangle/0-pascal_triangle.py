@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Module needed to perform this task '''
+    """ module needed for this task to perform"""
 
 def pascal_triangle(n):
     """Create a function def pascal_triangle(n): that returns a list of lists
@@ -13,6 +13,6 @@ def pascal_triangle(n):
         line = [1]
         for just in range(1, initial):
             line.append(previous[just-1] + previous[just])
-            line.append(1)
-            tri.append(line)
-            return tri
+        line.append(1)
+        tri.append(line)
+    return tri
