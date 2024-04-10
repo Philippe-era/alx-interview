@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-    """ module needed for this task to perform"""
+
 
 def pascal_triangle(n):
     """Create a function def pascal_triangle(n): that returns a list of lists
