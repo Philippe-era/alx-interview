@@ -11,7 +11,7 @@ def pascal_triangle(n):
     for initial in range(1, n):
         previous = tri[-1]
         line = [1]
-        for just in range(1, i):
+        for just in range(1, initial):
             line.append(previous[just-1] + previous[just])
         line.append(1)
         tri.append(line)
