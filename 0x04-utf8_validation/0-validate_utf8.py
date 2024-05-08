@@ -6,7 +6,7 @@ def validUTF8(data):
     """Checks if a given data set
     displays a valid utf-8 encoding
     """
-    number_bytes = 0
+    number_b = 0
 
     mask_1 = 1 << 7
     mask_2 = 1 << 6
@@ -17,7 +17,7 @@ def validUTF8(data):
 
         if number_b == 0:
 
-            while mask_byte & i:
+            while mask_byte & initial:
                 number_b += 1
                 mask_byte = mask_byte >> 1
 
