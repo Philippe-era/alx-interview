@@ -11,7 +11,7 @@ def rotate_2d_matrix(matrix):
     """
     left_side, right_side = 0, len(matrix) - 1
 
-    while left < right:
+    while left_side < right_side:
         for initial in range(right_side - left_side):
             top_side, bottom_side = left_side, right_side
             
