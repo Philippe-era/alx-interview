@@ -14,7 +14,7 @@ def primeNumbers(n):
     for prime_check in range(2, n + 1):
         if (excluded_nums[prime_check]):
             prime_nums.append(prime_check)
-            for initial in range(prime, n + 1, prime_check):
+           for initial in range(prime_check, n + 1, prime_check):
                 excluded_nums[initial] = False
     return prime_nums
 
