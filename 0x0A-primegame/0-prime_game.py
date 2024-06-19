@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: Prime numbers to be checked
+Module: Prime numbers being checked
 """
 
 
@@ -10,18 +10,18 @@ def primeNumbers(n):
         n (int): upper boundary of range. lower boundary is always 1
     """
     prime_nums = []
-    excluded_nums = [True] * (n + 1)
-    for prime_check in range(2, n + 1):
-        if (excluded_nums[prime_check]):
-            prime_nums.append(prime_check)
-           for initial in range(prime_check, n + 1, prime_check):
-                excluded_nums[initial] = False
+    excluded = [True] * (n + 1)
+    for prime in range(2, n + 1):
+        if (excluded[prime]):
+            prime_nums.append(prime)
+            for initial in range(prime, n + 1, prime):
+                excluded[initial] = False
     return prime_nums
 
 
 def isWinner(x, nums):
     """
-    This tells us who won
+    Tells who will win the game
     Args:
         x (int): no. of rounds of game
         nums (int): upper limit of range for each round
