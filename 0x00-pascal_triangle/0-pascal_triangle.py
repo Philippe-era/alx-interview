@@ -10,14 +10,14 @@ def pascal_triangle(n):
     Returns:
       List of lists of integers representing the Pascal’s triangle
     '''
-    storage = []
+    lists = []
     if n == 0:
-        return storage
+        return lists
     for initial in range(n):
-        storage.append([])
-        storage[initial].append(1)
+        lists.append([])
+        lists[initial].append(1)
         if (initial > 0):
-            for just in range(1, initial):
-                storage[initial].append(storage[initial - 1][just - 1] + storage[initial - 1][just])
-            storage[initial].append(1)
-    return storage
+            for j in range(1, initial):
+                lists[initial].append(lists[initial - 1][j - 1] + lists[initial - 1][j])
+            lists[initial].append(1)
+    return lists
